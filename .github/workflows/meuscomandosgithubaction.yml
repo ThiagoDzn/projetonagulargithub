@@ -1,0 +1,15 @@
+name: Deploy da pasta dist
+
+on: 
+  push:
+    branches: ["master"]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+         steps: 
+            - name: mostrando em que pasta estamos
+              run: echo $(pwd)
+            - name: olhando quais arquivos temos dentro da pasta
+              run: ls -la
+              
